@@ -1,13 +1,14 @@
 package com.capgemini.ttrms.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Generated;
-import lombok.NoArgsConstructor;
+//import lombok.AllArgsConstructor;
+//import lombok.Data;
+//import lombok.Generated;
+//import lombok.NoArgsConstructor;
 
 //@Data
 //@AllArgsConstructor
@@ -15,8 +16,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Train {
 	@Id
-	@Generated
-	
+	@GeneratedValue
 	private int trainNo;
 	@NotBlank(message = "train name not be null")
 	private String trainName;

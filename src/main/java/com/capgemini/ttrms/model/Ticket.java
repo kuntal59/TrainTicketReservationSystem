@@ -4,11 +4,6 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
-import lombok.*;
-//
-//@Data
-//@NoArgsConstructor
-//@AllArgsConstructor
 
 @Entity
 public class Ticket implements Serializable {
